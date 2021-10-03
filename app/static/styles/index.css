@@ -1,0 +1,36 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5em;
+	max-width: 70ch;
+	padding: 0 2%;
+	margin: auto;
+    margin-top: 2em;
+}
+
+.results p {
+    text-align: center;
+}
+
+.text-input {
+    margin-bottom: 0.2em;
+	font-size: 1em
+}
+
+.var-input {
+    width: 3ch;
+    margin-bottom: 0.2em;
+	font-size: 1em 
+}
+
+.submit-btn {
+    font-size: 1.2em;
+}
+
+#error {
+    color: darkred;
+    font-size: small;
+}
+
+.hidden {
+    display: none;
+}

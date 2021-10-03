@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNZP</title>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+</head>
+
+<body>
+    <form onsubmit="event.preventDefault(); analyze();">
+        <label>Izraz:</label>
+        <input type="text" class="text-input" id="eqn"><br />
+        <label>Reši po:</label>
+        <input class="var-input" maxlength="1" type="text" id="solve_for">
+        <button class="submit-btn" type="submit">Reši</button><br />
+    </form>
+
+    <div class="results">
+        <p id="error" class="hidden">Greška</p>
+        <p id="expr" class="math-field"></p>
+        <p id="domain" class="math-field"></p>
+        <p id="zeros" class="math-field"></p>
+        <p id="positive" class="math-field"></p>
+        <p id="negative" class="math-field"></p>
+        <p id="parity" class="math-field"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

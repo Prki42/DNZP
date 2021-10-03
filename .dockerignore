@@ -1,0 +1,9 @@
+.flake8
+.vscode/
+.ipynb_checkpoints
+pyproject.toml
+notebooks/
+*.rest
+run.sh
+__pycache__
+compose-test/
